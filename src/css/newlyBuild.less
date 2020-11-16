@@ -1,0 +1,111 @@
+.inpostraft {
+  padding-top: 7px;
+  // 改页面新加的css
+  /deep/.ant-btn-primary {
+    background: #ffffff;
+    color: #c0c4cc;
+    padding: 0 14px;
+    border: 1px solid #dadadb;
+  }
+  .inpostraft-toptitle {
+    color: #606266;
+    margin: 24px 0px 0px;
+    line-height: 20px;
+  }
+  // 改页面改的css
+  .bigbox {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .inpostraft-inbox-end {
+      cursor: pointer;
+      height: 106px;
+      width: 134px;
+      background: url("../assets/addpostset/postall.png");
+      background-size: 100% 100%;
+      margin-top: 10px;
+      margin-right: 20px;
+      .inpostraft-inbox-end-title {
+        margin-top: 62px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    .inpostraft-inbox {
+      height: 106px;
+      width: 134px;
+      background: url("../assets/addpostset/postpart.png");
+      background-size: 100% 100%;
+      margin-top: 10px;
+      margin-right: 20px;
+      position: relative;
+      overflow: hidden;
+      &:hover > .inpostraft-inbox-title {
+        display: none;
+      }
+      &:hover > .inpostraft-inbox-title-box {
+        margin: 12px auto 0px;
+      }
+      .inpostraft-inbox-title {
+        width: 100%;
+        padding: 0px 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        color: #303133;
+        margin-top: 26px;
+        text-align: center;
+        display: block;
+      }
+      .inpostraft-inbox-title-box{
+        width: 82px;
+        height: 41px;
+        margin: 70px auto 0px;
+        display: flex;
+        justify-content: space-between;
+        transition: all .2s linear;
+      }
+      .inpostraft-inbox-title-xj {
+        width: 36px;
+        border: 1px #9bd0fc dashed;
+        text-align: center;
+        line-height: 39px;
+        color: #0082ef;
+        display: inline-block;
+      }
+      .inpostraft-inbox-text {
+        color: #ffffff;
+        font-size: 14px;
+        position: absolute;
+        bottom: 10px;
+        justify-content: center;
+        width: 100%;
+        padding: 0 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0px;
+        .textimg {
+          width: 12px;
+          height: 14px;
+          margin-right: 6px;
+        }
+      }
+    }
+    .inpostraft-inbox:nth-child(6n + 6) {
+      margin-right: 0px;
+    }
+    .inpostraft-inbox-alternate {
+      height: 106px;
+      width: 134px;
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+    .inpostraft-inbox-alternate:last-child {
+      margin-right: 0px;
+    }
+  }
+}

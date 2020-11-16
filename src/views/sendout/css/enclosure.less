@@ -1,0 +1,143 @@
+.addInpostrafts-enclosure {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    padding-left: 30px;
+    background: white;
+    .main-top-inleft {
+      width: 200px;
+      background: #f5f7fa;
+      color: #303133;
+      line-height: 46px;
+      text-align: center;
+      position: relative;
+      .mandatory {
+        color: red;
+        font-size: 20px;
+        position: absolute;
+        left: 60px;
+        top: 2px;
+      }
+    }
+  
+    .remarks {
+      margin-left: 20px;
+      color: #909399;
+    }
+  
+    .main-top-inright {
+      line-height: 46px;
+      padding-right: 20px;
+      text-align: right;
+      .btn {
+        color: #0082ef;
+      }
+    }
+    .addInpostrafts-enclosure-textbox {
+      padding: 16px 0px 14px 10px;
+      font-size: 14px;
+      min-height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      .add-upload {
+        height: 60px;
+        width: 393px;
+        margin-right: 10px;
+        .ant-upload-picture-card-wrapper{
+             width: 100%;
+         }
+      }
+      .addInpostrafts-enclosure-textbox-inleft {
+        color: #303133;
+      }
+      .addInpostrafts-enclosure-textbox-inright {
+        color: #0082ef;
+        margin-left: 267px;
+      }
+      .addInpostrafts-enclosure-textbox-inbox-tltle-text {
+        font-size: 16px;
+        color: #000000;
+      }
+      .addInpostrafts-enclosure-textbox-inbox-tltle-file-size {
+        font-size: 14px;
+        color: #9b9b9b;
+      }
+      .addInpostrafts-enclosure-textbox-inbox {
+        margin-top: 10px;
+        .addInpostrafts-enclosure-textbox-cancel {
+          font-size: 14px;
+          color: #b4bccc;
+          margin-left: 55px;
+        }
+      }
+      .addInpostrafts-enclosure-textbox-inbox-tltle {
+        display: flex;
+        width: 393px !important;
+        height: 60px !important;
+        background: rgba(249, 249, 249, 1);
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 2px;
+        padding: 0px 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 10px 10px 0 !important;
+        margin-bottom: 10px;
+      }
+      @import url("../draft/addcompoents/css/publick.less");
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 10px;
+    border-left: 4px solid rgba(0, 130, 239, 1);
+    height: 20px;
+    .text {
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  
+  /deep/ .ant-upload {
+    height: 60px !important;
+    width: 393px !important;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: rgba(249, 249, 249, 1);
+    .anticon {
+      color: #c0c6ccff;
+    }
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .upload-icon {
+      width: 16px;
+      height: 14px;
+      background: url("../../../assets/addpostset/download.png");
+      background-size: 16px 14px;
+      margin-right: 6px;
+    }
+    .upload-text {
+      color: #0082ef;
+      margin-left: 14px;
+    }
+  }
+  
+  /deep/.ant-modal-body {
+    overflow-y: scroll;
+  }
+  /deep/ .ant-modal-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+  }
+  .view-file-box{
+    height: 400px;
+    overflow: auto;
+}

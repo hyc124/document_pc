@@ -1,0 +1,124 @@
+
+//文件上传等样式
+.file-item {
+    display: flex;
+    width: 508px;
+    height: 60px;
+    background: rgba(249, 249, 249, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 2px;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    .left {
+      display: flex;
+      align-items: center;
+      .document {
+        width:30px;
+        height: 36px;
+        background: url("../../../../../assets/addpostset/document.png");
+        background-size: 30px 36px;
+      }
+      .img{
+        width:36px;
+        height: 36px;
+        background: url("../../../../../assets/file/img-head.png");
+        background-size: 36px 36px;
+      }
+      .msg {
+        width: 140px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    /deep/ .ant-progress {
+      width: 130px;
+
+      .ant-progress-bg {
+        background: #75d25e;
+        height: 8.5px !important;
+        border-radius: 1px !important;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+    } 
+    .file-size {
+      font-size: 14px;
+      color: #9b9b9b;
+    }
+    .quxiao {
+      color: #909399;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .addInpostrafts-enclosure-textbox-inbox-tltle-rightimg {
+      width: 18px;
+      height: 12px;
+      background: url("../../../../../assets/addpostset/eye.png");
+      background-size: 18px 12px;
+    }
+    .addInpostrafts-enclosure-textbox-inbox-tltle-rightimgs {
+      width: 14px;
+      height: 16px;
+      margin-left: 20px;
+      background: url("../../../../../assets/addpostset/delete.png");
+      background-size: 14px 16px;
+    }
+}
+
+.addInpostrafts-enclosure-textbox-inbox-tltle-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+/deep/ .avatar-uploader {
+  width: 508px;
+  height: 60px;
+  /deep/ .ant-upload {
+    width: 508px;
+    height: 60px;
+    box-sizing: border-box;
+    background: rgba(249, 249, 249, 1);
+    .anticon {
+      margin-right: 10px;
+      color: #c0c6ccff;
+    }
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .upload-icon {
+        width: 16px;
+        height: 14px;
+        background: url("../../../../../assets/addpostset/upload.png");
+        background-size: 16px 14px;
+        margin-right: 6px;
+      }
+      .upload-text {
+        color: #0082ef;
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
+/deep/ .ant-progress-inner {
+  border: 1px solid rgba(117, 210, 94, 1);
+  padding: 2px;
+  border-radius: 2px;
+  background: white;
+  width: 80px;
+  height: 14px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,103 @@
+//  预览公文内容
+.preview-modal {
+  /deep/ .ant-modal-body {
+    min-height: 500px;
+  }
+  /deep/ .ant-modal-content{
+      width: 900px;
+  }
+  
+  .preview {
+    padding: 0 30px 30px 30px;
+    h2 {
+      text-align: center;
+      color: #fa5555 !important ;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .time {
+      text-align: right;
+      color: #909399;
+      font-size: 12px;
+    }
+    .content-text {
+      .line {
+        display: flex;
+        align-items: center;
+        border-bottom: none;
+        &:last-child {
+          border-bottom: 1px solid #fa5555 !important ;
+        }
+        .head {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 124px;
+          color: #fa5555 !important ;
+        }
+        .content {
+          border-left: 1px solid #fa5555 !important ;
+        }
+      }
+
+      // 第一种
+      .fir {
+        line-height: 32px;
+        box-sizing: border-box;
+        border: 1px solid #fa5555 !important ;
+        border-bottom: none;
+
+        .head {
+          margin-top: -1px;
+          padding-left: 10px;
+          color: #fa5555 !important ;
+          height: 48px !important;
+          width: 124px;
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          max-width: 443px;
+          height: 100%;
+          padding-left: 10px;
+          min-height: 48px;
+        }
+      }
+      .sec {
+        display: flex;
+        border: 1px solid #fa5555 !important ;
+        border-bottom: none;
+        position: relative;
+        overflow: hidden;
+        .item {
+          display: flex;
+          height: 100%;
+          min-height: 48px;
+          border-right: 1px solid #fa5555 !important ;
+          &:last-child {
+            border-right: none;
+          }
+        }
+        .content {
+          width: 284px;
+          min-height: 48px;
+          padding: 15px;
+        }
+      }
+    }
+    .file-text {
+      margin-top: 60px;
+      .head {
+        text-align: center;
+        h3 {
+          color: #fa5555 !important ;
+          padding: 10px 0;
+          font-size: 20px;
+          font-weight: 600;
+          border-bottom: 1px solid #f56c6c !important ;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,355 @@
+body,
+html {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+body /deep/ .ant-btn-primary {
+  background: #0082EF;
+}
+
+.minw {
+  min-width: 1280px;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+  background: #f9fafc;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #e4e6e9;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-db {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-col-db {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-sa {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.flex-col-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex-level {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-align-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+/* 上下两边对齐 */
+
+.flex-row-db {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.download {
+  cursor: pointer;
+}
+
+/* table分页对齐方式 */
+
+.table-content-at {
+  padding: 12px 0;
+  /* overflow-y: auto; */
+}
+
+.table-content-at /deep/ .ant-table-wrapper {
+  height: 100%;
+}
+
+.table-content-at /deep/ .ant-table-wrapper .ant-spin-nested-loading {
+  height: 100%;
+}
+
+.table-content-at /deep/ .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.table-content-at /deep/ .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-pagination {
+  text-align: right;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.table-content-at /deep/ .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-pagination.ant-pagination {
+  margin: 16px 0 0;
+}
+
+/* 分页 */
+
+.a-pagination {
+  text-align: right;
+  text-align: right;
+  margin: 20px 0 !important;
+}
+
+.cz-del {
+  color: rgb(250, 85, 85);
+}
+
+.cz {
+  color: rgb(0, 130, 239);
+}
+
+/* 盒子阴影 */
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* 三角形 */
+
+.sanjiao {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  margin-left: 6px;
+}
+
+.xia {
+  border-bottom: 6px transparent;
+  border-top: 6px solid rgba(180, 188, 204, 1);
+}
+
+.shang {
+  border-top: 6px transparent;
+  border-bottom: 6px solid rgba(180, 188, 204, 1);
+}
+
+#maincontent /deep/ .ant-tabs {
+  overflow: visible !important;
+}
+
+.z1000 {
+  position: relative;
+  z-index: 10000;
+}
+
+.zz1 {
+  position: relative;
+  z-index: -1 !important;
+  opacity: 0;
+}
+
+.red {
+  color: red;
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+/* 普通 */
+
+.normal {
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  color: #303133;
+}
+
+/* 紧急 */
+
+.urgent {
+  background: #F84949;
+  color: #ffffff;
+}
+
+/* 加急 */
+
+.so-urgent {
+  background: #D12D2D;
+  color: #ffffff;
+}
+
+.file-head {
+  width: 30px;
+  height: 36px;
+}
+
+.file-head-txt {
+  background: url("../assets/file/txt.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.file-head-doc {
+  background: url("../assets/file/word.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.file-head-image {
+  width: 36px !important;
+  height: 36px !important;
+  background: url("../assets/file/img.png") no-repeat;
+  background-size: 36px 36px;
+}
+
+.file-head-ppt {
+  background: url("../assets/file/ppt.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.file-head-pdf {
+  background: url("../assets/file/pdf.png") no-repeat;
+  background-size: 36px 36px;
+}
+
+.file-head-excel {
+  background: url("../assets/file/excel.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.file-head-audio {
+  background: url("../assets/file/audio.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.file-head-video {
+  background: url("../assets/file/video.png") no-repeat;
+  background-size: 30px 36px;
+}
+
+.w-e-text {
+  font-family: Fangsong !important;
+  font-size: 19px !important;
+}
+
+#editor /deep/ {
+
+  pre,
+  p,
+  span {
+    font-size: 19px !important;
+    font-family: FangSong !important;
+  }
+}
+#editor /deep/ pre {
+  white-space: pre-wrap;
+  /* css3.0 */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+.body /deep/ pre {
+  white-space: pre-wrap;
+  /* css3.0 */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}

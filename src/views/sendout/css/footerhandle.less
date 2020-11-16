@@ -1,0 +1,334 @@
+.addInpostrafts-footer-handle {
+    padding-left: 10px;
+    .processing {
+      display: flex;
+      flex-direction: column;
+      .line {
+        border: 1px solid rgba(220, 223, 230, 1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border-bottom: none;
+        &:last-child {
+          border-bottom: 1px solid rgba(220, 223, 230, 1);
+        }
+        .p-title {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 150px;
+          height: 70px;
+          background: rgba(250, 250, 250, 1);
+          border-right: 1px solid rgba(230, 230, 230, 1);
+          flex-wrap: wrap;
+        }
+        .p-content {
+          flex: 1;
+          padding-left: 20px;
+        }
+      }
+      .submitter {
+        .p-content {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1;
+          padding-left: 20px;
+          .item {
+            display: flex;
+            align-items: center;
+            .head {
+              width: 48px;
+              height: 48px;
+              border-radius: 50%;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .user-info {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              margin-left: 10px;
+              .name {
+                color: #606266;
+                font-size: 16px;
+              }
+              .position {
+                color: #909399;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .next {
+        .item {
+          margin-right: 20px;
+        }
+        .p-content{
+            height: 100px;
+        }
+      }
+      .opinions {
+        .p-title {
+          width: 150px;
+          height: 168px;
+        }
+        .p-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 168px;
+          .p-box {
+            width: 649px;
+            height: 134px;
+            position: relative;
+            /deep/.ant-input {
+              width: 649px;
+              height: 90px;
+              resize: none;
+              border-radius: 0px;
+            }
+            .box-textnum {
+              position: absolute;
+              bottom: 50px;
+              right: 10px;
+              color: #c0c6cc;
+            }
+            .btn-list {
+              display: flex;
+              .btn-item {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                height: 36px;
+                color: #4aaeff;
+                border-left: 1px solid rgba(217, 217, 217, 1);
+                border-bottom: 1px solid rgba(217, 217, 217, 1);
+                font-size: 14px;
+                background: rgba(239, 248, 255, 1);
+                border-radius: 0px 0px 2px 0px;
+                &:last-child {
+                  border-right: 1px solid rgba(217, 217, 217, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .urgents {
+        .jinji {
+          color: #f5ac40;
+        }
+        .jiaji {
+          color: #f56c6c;
+        }
+      }
+      .noticing {
+        .p-title {
+          width: 150px;
+          height: 72px;
+        }
+        .p-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 72px;
+          .day {
+            color: #303133;
+            font-size: 14px;
+          }
+          .hour,
+          .minute {
+            color: #0082ef;
+            font-size: 14px;
+          }
+          .ant-checkbox-wrapper {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 40px;
+          }
+          .ant-input {
+            width: 28px;
+            height: 32px;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(220, 223, 230, 1);
+            border-radius: 4px;
+            padding: 0;
+            text-align: center;
+          }
+        }
+      }
+      .noticing-ways{
+         .p-content{
+             .ant-checkbox-group{
+                 display: flex;
+                 align-items: center;
+             }
+         }
+      }
+      .files {
+        padding: 5px 0;
+        position: relative;
+        .p-title {
+          width: 150px;
+          min-height: 175px;
+          position: absolute;
+          height: 100%;
+        }
+        .p-content {
+          display: flex;
+          flex-direction: row !important;
+          flex-direction: column;
+          justify-content: space-between;
+          align-content: center;
+          flex-wrap: wrap;
+          min-height: 175px;
+          font-family: 'PingFangSC-Regular';
+          margin-left: 150px;
+          @import url('../draft/addcompoents/css/publick.less');
+        }
+      }
+    }
+  }
+  .upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 32px;
+    background: rgba(0, 130, 239, 1);
+    border: 1px solid rgba(0, 130, 239, 1);
+    border-radius: 4px;
+    color: white;
+    .ljie {
+      width: 18px;
+      height: 14px;
+      background: url('../../../assets/addpostset/link_white.png');
+      background-size: 18px 14px;
+    }
+  }
+  // 通知选项
+  .notification-option {
+    .r-content {
+      p {
+        line-height: 2.5;
+      }
+    }
+    .ant-input {
+      width: 24px;
+      height: 24px;
+      color: #c0c4ccff;
+      padding: 0;
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+  
+  //快速回复
+  .reply-list {
+    height: 250px;
+    overflow-y: scroll;
+    .reply-item {
+      min-height: 48px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px;
+      cursor: pointer;
+      transition: all 0.4s;
+      border: 1px solid transparent;
+      &:hover {
+        background: rgba(246, 247, 249, 1);
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        .delete {
+          width: 16px;
+          height: 16px;
+          background: url('../../../assets/adddraft/reply-delete.png');
+          background-size: 16px 16px;
+        }
+        .bianji {
+          width: 16px;
+          height: 16px;
+          background: url('../../../assets/adddraft/bianji.png');
+          background-size: 16px 16px;
+          margin-right: 15px;
+        }
+      }
+  
+      .text {
+        display: inline-block;
+        width: 86%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .active {
+      border: 1px solid #3498db;
+    }
+  }
+  .add-reply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0082ef;
+    margin-top: 10px;
+    cursor: pointer;
+    i {
+      width: 10px;
+      height: 10px;
+      background: url('../../../assets/adddraft/add-reply.png');
+      background-size: 10px 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  .signature {
+    /deep/ .ant-modal {
+      width: 760px !important;
+      .ant-tabs-tab {
+        color: #303133;
+      }
+    }
+    .upload-signature {
+      color: #0082ef;
+      cursor: pointer;
+      .jia {
+        font-size: 20px;
+      }
+    }
+  }
+  /deep/ .ant-form {
+    width: 100%;
+    .ant-row {
+      display: flex;
+      margin-bottom: 0;
+      .ant-form-item-label {
+        flex: 0 0 80px !important;
+      }
+      .ant-form-item-control-wrapper {
+        flex: 1;
+      }
+    }
+  }
+  .error {
+    color: #f33636;
+    font-size: 12px;
+  }
+  .btn-item {
+    color: #4aaeff;
+  }
+
+  .view-file-box{
+    height: 400px;
+    overflow: auto;
+}

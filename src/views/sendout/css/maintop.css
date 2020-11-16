@@ -1,0 +1,223 @@
+.addInpostrafts-main-top {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+}
+.main_right {
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  border-left: 4px solid #0082ef;
+  height: 20px;
+}
+.title .text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.ljie {
+  width: 18px;
+  height: 14px;
+  background: url("../../../assets/addpostset/link_white.png");
+  background-size: 18px 14px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+  height: 605px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background: #E6E6E6;
+  padding-bottom: 20px;
+}
+.box2 {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+ /deep/ #editor {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-center-btn {
+  position: absolute;
+  top: 61px;
+  right: 40px;
+  z-index: 9;
+  height: 24px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.flex-end {
+  position: absolute;
+  width: 596px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0;
+  top: 53px;
+  z-index: 10;
+  margin-top: 132px;
+}
+.seal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
+  height: auto;
+  z-index: 11;
+  cursor: pointer;
+}
+.seal:hover .hold-all {
+  display: flex;
+}
+.seal .del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/adddraft/x.png");
+  background-size: 20px 20px;
+  z-index: 11;
+  user-select: none;
+}
+.seal .zoom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/adddraft/scroll.png");
+  background-size: 20px 20px;
+  z-index: 11;
+  user-select: none;
+}
+.seal .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.seal .hold-all {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background-color: #d5d5d5;
+  opacity: 0.85;
+  text-align: center;
+  border: 1px #adadad solid;
+  padding: 3px 0;
+  z-index: 11;
+}
+.seal .hold-all .item {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.seal .hold-all .del {
+  background: url("../../../assets/adddraft/qianzhang-delete.png");
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.seal .hold-all .move {
+  background: url("../../../assets/adddraft/tuodong.png");
+  background-size: 20px 20px;
+  cursor: move;
+}
+.seal .ismove {
+  display: flex !important;
+}
+.seal .zhang {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  user-select: none;
+}
+.seal .to-big {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.upload {
+  display: flex;
+  align-items: center;
+  color: #0082ef;
+  font-size: 14px;
+}
+.upload .upload-icon {
+  width: 16px;
+  height: 13px;
+  background: url("../../../assets/file/upload2.png");
+  background-size: 16px 13px;
+  margin-right: 8px;
+}
+.upload .upload-icon-saomiao {
+  width: 14px;
+  height: 14px;
+  background: url("../../../assets//file/saomiao.png");
+  background-size: 14px 14px;
+  margin-right: 8px;
+}
+.addInpostrafts-main-top {
+  width: 100%;
+  background: white;
+  padding-left: 40px !important;
+  position: relative;
+}
+.addInpostrafts-main-top .main-top-center {
+  border-radius: 0px;
+  padding: 0 10px;
+  resize: none;
+  outline: none;
+}
+ /deep/ .w-e-text-container {
+  width: 750px !important;
+  margin: 0 auto;
+  min-height: 550px;
+  border: none !important;
+  height: auto !important;
+  font-size: 19px !important;
+  margin-top: 20px;
+  background: white;
+  padding-top: 132px;
+}
+ /deep/ .w-e-text-container /deep/ pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+ /deep/ .w-e-text {
+  width: 548px !important;
+  margin: 0 auto;
+  overflow-y: inherit;
+  height: auto !important;
+  min-height: 550px;
+  padding: 0;
+}
+ /deep/ .w-e-text p {
+  margin: 0;
+}
+ /deep/ .w-e-text * {
+  max-width: 548px;
+}
+ /deep/ .w-e-toolbar {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 99999;
+}
